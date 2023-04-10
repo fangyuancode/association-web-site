@@ -1,0 +1,196 @@
+body {
+  background-color: #F6F7F9;
+}
+header {
+  height: 110px;
+  width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .right {
+  margin-right: 10px;
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+main {
+  margin: 0 auto;
+  background-color: #fff;
+  height: 910px;
+  width: 1200px;
+}
+main .login-main {
+  margin-top: 50px;
+}
+main .login-main .header {
+  margin: 0 auto;
+  width: 900px;
+  height: 130px;
+  line-height: 130px;
+  background-color: #fff;
+}
+main .login-main .header img {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 100%;
+}
+main .login-main .form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 1000px;
+}
+main .login-main .form .left {
+  height: 400px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: right;
+  margin-right: 40px;
+}
+main .login-main .form .left span {
+  margin-right: 10px;
+}
+main .login-main .form .left input {
+  width: 281px;
+  height: 30px;
+}
+main .login-main .form .right {
+  height: 400px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: right;
+  margin-right: 80px;
+}
+main .login-main .form .right span {
+  margin-right: 10px;
+}
+main .login-main .form .right input {
+  width: 281px;
+  height: 30px;
+}
+main .login-main .login-register {
+  width: 1200px;
+}
+main .login-main .login-register .info {
+  margin-top: 30px;
+  margin-left: 250px;
+  box-sizing: border-box;
+}
+main .login-main .login-register .info button {
+  margin-top: 20px;
+  color: #fff;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color: #3698FB;
+}
+main .login-main .login-register .info button:hover {
+  box-shadow: 0px 0px 1px #005AD2;
+}
+footer {
+  margin-top: 30px;
+}
+footer .footermessage {
+  background-color: #3A7ABA;
+  width: 100%;
+  height: 160px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+footer .footermessage .fect {
+  width: 700px;
+  margin-left: 40px;
+  padding-top: 20px;
+}
+footer .footermessage .fect ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+}
+footer .footermessage .text {
+  width: 700px;
+  margin-left: 40px;
+}
+footer .footermessage .text p {
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  color: #ddd;
+  display: block;
+}
+footer .footermessage .right .box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 15px;
+  width: 400px;
+}
+footer .footermessage .right .box .item .pic img {
+  width: 100px;
+  height: 100px;
+}
+footer .footermessage .right .box .item .txt {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 5px;
+}
+.intrduce {
+  margin: 0 auto;
+  width: 1015px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.intrduce .simply {
+  margin-top: 35px;
+  margin-left: 70px;
+  display: flex;
+}
+.intrduce .simply textarea {
+  width: 768px;
+  height: 90px;
+  resize: none;
+}
+.intrduce .discrible {
+  margin-top: 30px;
+  margin-left: 44px;
+  display: flex;
+}
+.intrduce .discrible div {
+  width: 110px;
+  margin-left: -6px;
+}
+.intrduce .discrible textarea {
+  width: 768px;
+  height: 90px;
+  resize: none;
+}

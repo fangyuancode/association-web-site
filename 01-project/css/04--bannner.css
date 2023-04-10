@@ -1,0 +1,249 @@
+.banner {
+  margin: 0 auto;
+  /*主盒子*/
+  /*左右按钮*/
+  /*轮播内容*/
+  /*轮播图*/
+  /*轮播小点点*/
+  /*小点点当前位置的样式*/
+}
+.banner #app {
+  width: 1190px;
+  height: 90px;
+  overflow: hidden;
+  background: red;
+  margin: 0 auto;
+  position: relative;
+}
+.banner .left {
+  margin-left: 20px;
+}
+.banner .right {
+  right: 0;
+  margin-right: 20px;
+}
+.banner .arrowhead {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  z-index: 2;
+  font-weight: 700;
+}
+.banner .arrowhead div {
+  border-radius: 50%;
+  background: #eee;
+  padding: 10px;
+}
+.banner .content {
+  height: 90px;
+  text-align: center;
+  line-height: 90px;
+  display: flex;
+  position: absolute;
+  left: -1200px;
+}
+.banner img {
+  width: 1200px;
+  height: 90px;
+}
+.banner .subscript {
+  width: 100%;
+  height: 10px;
+  position: absolute;
+  bottom: 0;
+  z-index: 2;
+  box-sizing: border-box;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner .subscript li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #fff;
+  list-style: none;
+  margin: 0 5px 0 5px;
+}
+.banner .subscript .active {
+  background: #005AD2;
+}
+.buttom-activity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+}
+.buttom-activity .middle-activity4 {
+  width: 386px;
+  height: 460px;
+  background-color: #fff;
+}
+.buttom-activity .middle-activity4 .study {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 386px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 18px;
+  border-top: 2px solid #005ad2;
+  background-color: rgba(223, 228, 234, 0.54);
+  overflow: hidden;
+}
+.buttom-activity .middle-activity4 .study .left {
+  margin-left: 5px;
+}
+.buttom-activity .middle-activity4 .study .left img {
+  margin-top: 5px;
+  width: 40px;
+  height: 40px;
+}
+.buttom-activity .middle-activity4 .study .left span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #005AD2;
+}
+.buttom-activity .middle-activity4 .study .right {
+  font-size: 14px;
+  color: #5b718e;
+  margin-right: 20px;
+}
+.buttom-activity .middle-activity4 .text {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+.buttom-activity .middle-activity4 .text .txt {
+  height: 30px;
+  line-height: 30px;
+}
+.buttom-activity .middle-activity4 .text .txt:hover {
+  color: #4069D2;
+}
+.buttom-activity .middle-activity4 .text .date {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #bfbfbf;
+}
+.buttom-activity .middle-activity4 .text .date img {
+  margin-top: 3px;
+}
+.buttom-activity .middle-activity5 {
+  width: 386px;
+  height: 460px;
+  background-color: #fff;
+  margin-left: 14px;
+}
+.buttom-activity .middle-activity5 .study {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 386px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 18px;
+  border-top: 2px solid #005ad2;
+  background-color: rgba(223, 228, 234, 0.54);
+  overflow: hidden;
+}
+.buttom-activity .middle-activity5 .study .left {
+  margin-left: 5px;
+}
+.buttom-activity .middle-activity5 .study .left img {
+  margin-top: 5px;
+  width: 40px;
+  height: 40px;
+}
+.buttom-activity .middle-activity5 .study .left span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #005AD2;
+}
+.buttom-activity .middle-activity5 .study .right {
+  font-size: 14px;
+  color: #5b718e;
+  margin-right: 20px;
+}
+.buttom-activity .middle-activity5 .text {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+.buttom-activity .middle-activity5 .text .txt {
+  height: 30px;
+  line-height: 30px;
+}
+.buttom-activity .middle-activity5 .text .txt:hover {
+  color: #4069D2;
+}
+.buttom-activity .middle-activity5 .text .date {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #bfbfbf;
+}
+.buttom-activity .middle-activity5 .text .date img {
+  margin-top: 3px;
+}
+.buttom-activity .middle-activity6 {
+  width: 386px;
+  height: 460px;
+  background-color: #fff;
+  margin-left: 15px;
+  margin-right: 90px;
+}
+.buttom-activity .middle-activity6 .study {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 386px;
+  height: 45px;
+  line-height: 45px;
+  font-size: 18px;
+  border-top: 2px solid #005ad2;
+  background-color: rgba(223, 228, 234, 0.54);
+  overflow: hidden;
+}
+.buttom-activity .middle-activity6 .study .left {
+  margin-left: 5px;
+}
+.buttom-activity .middle-activity6 .study .left img {
+  margin-top: 5px;
+  width: 40px;
+  height: 40px;
+}
+.buttom-activity .middle-activity6 .study .left span {
+  font-size: 18px;
+  font-weight: bold;
+  color: #005AD2;
+}
+.buttom-activity .middle-activity6 .study .right {
+  font-size: 14px;
+  color: #5b718e;
+  margin-right: 20px;
+}
+.buttom-activity .middle-activity6 .text {
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-left: 15px;
+}
+.buttom-activity .middle-activity6 .text .txt {
+  height: 30px;
+  line-height: 30px;
+}
+.buttom-activity .middle-activity6 .text .txt:hover {
+  color: #4069D2;
+}
+.buttom-activity .middle-activity6 .text .date {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #bfbfbf;
+}
+.buttom-activity .middle-activity6 .text .date img {
+  margin-top: 3px;
+}

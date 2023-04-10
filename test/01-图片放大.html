@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .box {
+            width: 446px;
+            height: 314px;
+            /* background-color: pink; */
+            overflow: hidden;
+        }
+
+        .box img {
+            width: 100%;
+            height: 100%;
+            transition: all .4s;
+        }
+        .box:hover img{
+            /* 实现移入元素变大特效 */
+            transform: scale(1.1);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <img src="../01-project/asset/ad-0408.jpg" alt="">
+    </div>
+</body>
+
+</html>

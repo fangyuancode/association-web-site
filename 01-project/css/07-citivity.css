@@ -1,0 +1,193 @@
+.main-communication {
+  margin: 0 auto;
+}
+.main-communication .navbar {
+  margin: 0 auto;
+  margin-top: 80px;
+  width: 1180px;
+  height: 50px;
+  line-height: 50px;
+  background-color: #fff;
+  font-size: 14px;
+}
+.main-communication .navbar .cur {
+  margin-left: 10px;
+}
+.main-communication .navbar .cur img {
+  margin-top: 15px;
+  width: 20px;
+  height: 20px;
+}
+.main-communication .navbar .cur a {
+  color: #409EFF;
+}
+.main-communication .list {
+  width: 1180px;
+  margin: 0 auto;
+}
+.main-communication .list .item1 {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 1180px;
+  height: 60px;
+  line-height: 60px;
+  background-color: #E7EBF0;
+  overflow: hidden;
+  border-top: 2px solid #0059d1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-communication .list .item1 .left {
+  font-size: 26px;
+  color: #0059d1;
+  font-weight: 400;
+  margin-left: 20px;
+}
+.main-communication .list .item1 .right {
+  width: 400px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-communication .list .item1 .right div:hover {
+  color: #409EFF;
+}
+.main-communication .list .content {
+  background-color: #fff;
+  margin: 0 auto;
+  width: 1180px;
+  height: 2160px;
+}
+.main-communication .list .content .border {
+  width: 1180px;
+  border-bottom: 1px solid #E7EBF0;
+}
+.main-communication .list .content .border .header {
+  margin: 0 auto;
+  width: 800px;
+  height: 120px;
+}
+.main-communication .list .content .border .header .title {
+  text-align: center;
+  font-size: 32px;
+  color: #0059d1;
+  font-size: 20px;
+  height: 70px;
+  line-height: 70px;
+}
+.main-communication .list .content .border .header .info {
+  margin: 0 auto;
+  text-align: center;
+  width: 250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-communication .list .content .border .header .info .date img {
+  margin-top: 2px;
+}
+.main-communication .list .content .border .header .info .category img {
+  margin-top: 2px;
+}
+.main-communication .list .content .news {
+  width: 1000px;
+  margin: 0 auto;
+}
+.main-communication .list .content .news p {
+  font-family: 'Microsoft Yahei' !important;
+  line-height: 1.9 !important;
+  margin-bottom: 20px !important;
+  text-indent: 2em;
+  /*首行缩进2个字符*/
+}
+.main-communication .list .content .news .meeting {
+  width: 800px;
+  margin: 0 auto;
+  height: 589px;
+}
+.main-communication .list .content .news .meeting img {
+  max-width: 100%;
+  height: 100%;
+}
+.main-communication .list .content .download {
+  margin: 0 auto;
+  width: 1100px;
+  height: 44px;
+  background-color: #E0E7F4;
+}
+.main-communication .list .content .download span {
+  height: 44px;
+  line-height: 44px;
+  background-color: #e0e7f4;
+  font-size: 16px;
+  color: #0059d1;
+  padding: 0 19px;
+  overflow: hidden;
+  font-weight: 400;
+}
+.main-communication .list .content .download-file {
+  margin: 0 auto;
+  width: 1100px;
+  height: 44px;
+  line-height: 44px;
+  border-bottom: 1px solid #E0E7F4;
+}
+.main-communication .list .content .download-file .main {
+  margin-left: 30px;
+}
+.main-communication .list .content .download-file .main img {
+  width: 19px;
+  height: 19px;
+  margin-top: 14px;
+}
+.main-communication .footer2 {
+  margin-top: 20px;
+}
+.main-communication .footer2 .footermessage {
+  background-color: #3A7ABA;
+  width: 1400px;
+  height: 160px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.main-communication .footer2 .footermessage .fect {
+  width: 700px;
+  margin-left: 40px;
+  padding-top: 20px;
+}
+.main-communication .footer2 .footermessage .fect ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: #fff;
+}
+.main-communication .footer2 .footermessage .text {
+  width: 700px;
+  margin-left: 40px;
+}
+.main-communication .footer2 .footermessage .text p {
+  text-align: center;
+  font-size: 14px;
+  line-height: 30px;
+  color: #ddd;
+  display: block;
+}
+.main-communication .footer2 .footermessage .right .box {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-size: 15px;
+  width: 400px;
+}
+.main-communication .footer2 .footermessage .right .box .item .pic img {
+  width: 100px;
+  height: 100px;
+}
+.main-communication .footer2 .footermessage .right .box .item .txt {
+  font-size: 15px;
+  text-align: center;
+  margin-top: 5px;
+}

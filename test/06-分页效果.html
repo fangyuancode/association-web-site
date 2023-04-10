@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .pagination {
+            text-align: center;
+            margin: 30px 30px 60px;
+            user-select: none;
+        }
+
+        .pagination li {
+            display: inline-block;
+            box-shadow: 0 5px 25px rgb(1 1 1/ 10%);
+        }
+
+        .pagination li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            line-height: 45px;
+
+        }
+
+        .previous-page {
+            width: 80px;
+        }
+
+        .current-page
+            {
+            background-color: #999;
+            width: 45px;
+        }
+
+        .current-page:hover {
+            background-color: #37c;
+            opacity: 0.8;
+        }
+
+        .previous-page,
+        .next-page {
+            background-color: #37c;
+            width: 80px;
+            cursor: pointer;
+            transition: 0.3s ease;
+        }
+
+        .previous-page:hover,
+        .next-page:hover {
+            transform: scale(1.2);
+        }
+
+        .active {
+            background-color: #37c;
+        }
+
+        .disable {
+
+            background-color: #999;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="pagination ">
+        <li class="previous-page disable">
+            <a href=""> &lt;</a>
+        </li>
+        <li class="current-page active">
+            <a href="">1</a>
+        </li>
+        <li class="current-page">
+            <a href="">2</a>
+        </li>
+        <li class="current-page">
+            <a href="">3</a>
+        </li>
+        
+        <li class="current-page">
+            <a href="">...</a>
+        </li>
+        <li class="current-page">
+            <a href="">9</a>
+        </li>
+        <li class="current-page">
+            <a href="">10</a>
+        </li>
+        <li class="next-page">
+            <a href="">&gt;</a>
+        </li>
+    </div>
+</body>
+
+</html>

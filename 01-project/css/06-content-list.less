@@ -1,0 +1,178 @@
+.main1{
+    margin: 0 auto;
+    .navbar{
+        margin: 0 auto;
+        margin-top: 80px;
+        width: 1180px;
+        height: 50px;
+        line-height: 50px;
+        background-color: #fff;
+        font-size: 14px;
+        .cur{
+            margin-left: 10px;
+            img{
+                margin-top: 15px;
+                width: 20px;
+                height: 20px;
+            }
+            a{
+                color: #409EFF;
+            }
+        }
+    }
+    .list{
+        width: 1180px;
+        margin: 0 auto;
+        // box-sizing: border-box;
+        .item1{
+            margin: 0 auto;
+            margin-top: 30px;
+            width: 1180px;
+            height: 60px;
+            line-height: 60px;
+            background-color: #E7EBF0;
+            overflow: hidden;
+            border-top: 2px solid #0059d1;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            .left{
+                font-size: 26px;
+                color: #0059d1;
+                font-weight: 400;
+                margin-left: 20px;
+            }
+            .right{
+                width: 400px;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+              
+                div:hover{
+                    color: #409EFF;
+                }
+            }
+         }
+         .item{
+            
+            width: 1178px;
+            height: 88px;
+            border-bottom: 2px solid #F6F7F9;
+            border-left: 2px solid #fff;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            // color: #888 !important;
+            .text{
+             font-size: 16px;
+              margin-left: 20px;
+              margin-top: 20px;
+            }
+            .message{
+                width: 300px;
+                display: flex;
+                justify-content:flex-start;
+                align-items: center;
+                color: #888;
+                .info{
+                    margin-top: 10px;
+                    margin-left: 20px;
+                    img{
+                        margin-top: 6px;
+                        width: 17px;
+                        height: 17px;
+                    }
+                    span{
+                        font-size: 12px;
+                        margin-top: 10px;
+                    }
+                }
+                .info1{
+                    margin-top: 10px;
+                    margin-left: 20px;
+                    img{
+                        margin-top: 6px;
+                        width: 17px;
+                        height: 17px;
+                    }
+                    span{
+                        font-size: 12px;
+                        margin-top: 10px;
+                    }
+                }
+            }
+         
+         }
+         .item:hover{
+            border-left: 2px solid #0059d1 ;
+            background-color: #E5F0FA;
+          
+         }
+         .itempage{
+            width: 1180px;
+            height: 60px;
+            line-height: 60px; 
+            background-color: #fff;
+
+            .pagination {
+                text-align: center;
+                // margin: 30px 30px 60px;
+                user-select: none;
+                // margin-top: 10px;
+            }
+    
+            .pagination li {
+                display: inline-block;
+                box-shadow: 0 5px 25px rgb(1 1 1/ 10%);
+                height: 40px;
+                line-height: 40px;
+            }
+    
+            .pagination li a {
+                color: #fff;
+                text-decoration: none;
+                font-size: 1.2em;
+                line-height: 45px;
+    
+            }
+    
+            .previous-page {
+                width: 80px;
+            }
+    
+            .current-page
+                {
+                background-color: #999;
+                width: 45px;
+            }
+    
+            .current-page:hover {
+                background-color: #3A7ABA;
+                opacity: 0.8;
+            }
+    
+            .previous-page,
+            .next-page {
+                background-color: #3A7ABA;
+                width: 80px;
+                cursor: pointer;
+                transition: 0.3s ease;
+            }
+    
+            .previous-page:hover,
+            .next-page:hover {
+                transform: scale(1.2);
+            }
+    
+            .active {
+                background-color: #3A7ABA;
+            }
+    
+            .disable {
+    
+                background-color: #999;
+            }
+         }
+    }
+
+}

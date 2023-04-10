@@ -1,0 +1,256 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       
+     
+
+        ul,
+        li {
+            padding: 0;
+            margin: 0;
+        }
+
+        /*主盒子*/
+        #app {
+            width: 1200px;
+            height: 90px;
+            overflow: hidden;
+            background: red;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        /*左右按钮*/
+        .left {
+            margin-left: 20px;
+        }
+
+        .right {
+            right: 0;
+            margin-right: 20px;
+        }
+
+        .arrowhead {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            z-index: 2;
+            font-weight: 700;
+        }
+
+        .arrowhead div {
+            border-radius: 50%;
+            background: #eee;
+            padding: 10px;
+        }
+
+        /*轮播内容*/
+        .content {
+            height: 90px;
+            text-align: center;
+            line-height: 90px;
+            display: flex;
+            position: absolute;
+            left: -1200px;
+        }
+
+        /*轮播图*/
+        img {
+            width: 1200px;
+            height: 90px;
+        }
+
+        /*轮播小点点*/
+        .subscript {
+            width: 100%;
+            height: 10px;
+            position: absolute;
+            bottom: 0;
+            z-index: 2;
+            box-sizing: border-box;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .subscript li {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background: pink;
+            list-style: none;
+            margin: 0 5px 0 5px;
+        }
+
+        /*小点点当前位置的样式*/
+        .subscript .active {
+            background: #005AD2;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="app">
+        <!--  左右按钮-->
+        <div id="left" class="left arrowhead" style="display: none;">
+            <div>
+                左
+            </div>
+        </div>
+        <div id="right" class="right arrowhead" >
+            <div>右</div>
+        </div>
+        <!--  切换小点点-->
+        <ul class="subscript">
+        </ul>
+        <!-- 切换内容-->
+        <div class="content">
+        </div>
+    </div>
+</body>
+<script>
+
+
+    let left = document.getElementById('left')//左 
+    let right = document.getElementById('right')//右 
+    let app = document.getElementById('app')//主盒子
+    let content = document.getElementsByClassName('content')[0]//内容区域
+    let subscript = document.getElementsByClassName('subscript')[0]//小点点
+    //创建图片数组
+    let imgs = ['../01-project/asset/banner1.jpg','../01-project/asset/banner2.jpg','../01-project/asset/banner3.jpg'
+
+    ]
+
+    //计算滚动盒子宽度
+    content.style.width = `${(imgs.length) * 1200}px`
+    //创建图片dom
+    const str = imgs.map(img => `<img src="${img}" />`).join('');
+    //创建小点点dom
+    const str2 = imgs.map(() => '<li class="list"></li>').join('');
+    //插入父盒子和小点点
+    content.innerHTML = str;
+    subscript.innerHTML = str2;
+
+    //给小点点添加下标
+    for (let i = 0; i < subscript.children.length; i++) {
+        subscript.children[i].setAttribute('index', i)
+    }
+    //给content子元素添加下标
+    for (let i = 0; i < content.children.length; i++) {
+        content.children[i].setAttribute('index', i)
+    }
+    //个第一个添加上样式
+    subscript.children[0].classList.add('active')
+
+    // 定义一个变量用来存储定时器
+    let time = null;
+    // 定义一个变量用来存储轮播方向
+    let direction = 'left'
+    //定义一个变量用来存储开关
+    let flag = false
+    //延迟变量
+    let delay = 3000
+
+    //定义一个函数控制函数轮播时间
+    function play() {
+        clearTimeout(time);
+        time = setTimeout(() => carousel(-1), delay);
+    }
+    //启用轮播定时器
+    play();
+
+    //定义小点点样式函数
+    function subscriptStyle(indexContent) {
+        //清除所有小点点样式
+        for (let i = 0; i < subscript.children.length; i++) {
+            subscript.children[i].classList.remove('active')
+        }
+        //因为是从第二个开始轮播，所以要减一
+        let num = +indexContent - 1
+        //当下标为-1时，让下标为数组长度的最后一个，即最后一张图片
+        if (num == -1) num = content.children.length - 1
+        //给当前小点点添加样式
+        subscript.children[num].classList.add('active')
+    }
+
+    //平移函数
+    function carousel(num) {
+        clearTimeout(time);
+        //设置过渡
+        content.style.transition = "all .35s ease";
+        //设置content平移
+        content.style.transform = `translateX(${1200 * num}px)`;
+        //判断轮播方向
+        direction = num == -1 ? 'left' : 'right'
+    }
+
+    //监听点击事件
+    left.addEventListener("click", () => {
+        carousel(-1)
+    });
+    right.addEventListener("click", () => {
+        carousel(1)
+    });
+
+
+    //移动函数
+    function moveCarousel() {
+        const child = direction === "left" ? content.children[0] : content.lastElementChild;
+        content.removeChild(child);
+        direction === "left" ? content.appendChild(child) : content.prepend(child);
+    }
+
+    //监听过渡结束
+    content.addEventListener("transitionend", () => {
+        //禁掉过渡动画
+        content.style.transition = "none";
+        moveCarousel()
+        //重置translateX值，取消过渡效果
+        content.style.transform = "none";
+        //当开关为true时不执行play
+        if (!flag) play()
+        //让小点点的样式跟着变
+        subscriptStyle(content.children[1].getAttribute('index'))
+    })
+
+    //给小点点绑定点击事件
+    subscript.addEventListener("click", (e) => {
+        if (e.target.className === "list") {
+            //获取点击的小点点下标
+            const index = e.target.getAttribute('index')
+            //获取content子元素下标，当前显示的图片下标
+            const indexContent = content.children[1].getAttribute('index')
+            //计算点击的小点点和当前显示的图片的下标差值
+            const num = indexContent - index
+            //禁掉过渡动画
+            content.style.transition = "none";
+            //根据差值判断循环跳转几次
+            for (let i = 0; i < (content.children.length - num) + 1; i++) moveCarousel("left")
+            //让小点点的样式跟着变
+            subscriptStyle(+index + 1)
+        }
+    })
+    //移入app盒子停止轮播
+    app.addEventListener("mouseenter", () => {
+        clearTimeout(time);
+        flag = true
+        // 移出app盒子继续轮播
+        app.addEventListener("mouseleave", () => {
+            flag = false
+            play()
+        })
+    })
+  
+</script>
+
+</html>
+p

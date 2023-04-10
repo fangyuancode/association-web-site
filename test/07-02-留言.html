@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js">
+    </script>
+    <style>
+        .container {
+            width: 600px;
+            margin-left: 300px;
+            background-color: #F6F7F9;
+        }
+
+        .mes-board {
+            margin: 25px 0;
+            padding: 10px;
+            background-color: #ccd0da;
+
+        }
+
+        .mes-board li {
+            padding: 0.7em;
+            list-style: none;
+        }
+
+        .mes-board li+li {
+            border-top: 1px dashed #ffffff;
+        }
+
+        .mes-board h4 {
+            display: inline;
+            margin-right: 10px;
+            font-weight: 400px;
+            color: #000000;
+        }
+
+        .mes-board small {
+            color: #999999;
+            float: right;
+        }
+
+        .mes-board div {
+            padding: 0.4em 0;
+            text-align: justify;
+            font-size: 12px;
+            margin-top: 10px;
+        }
+
+        .message {
+            width: 400px;
+            height: 200px;
+        }
+    </style>
+
+
+</head>
+
+<!-- html部分： -->
+
+<body>
+    <div class="container">
+        <!--发送留言-->
+
+        <div class="form-group">
+            <label for="userName">用户姓名：</label>
+            <input type="text" class="form-control" id="userName">
+        </div>
+
+        <div class="form-group">
+            <label for="userName">留言内容：</label>
+            <br>
+            <textarea class="message" class="form-control" rows="3" id="content"></textarea>
+            <br>
+            <br>
+            <button class="btn btn-default" id="sendBtn">提交</button>
+            &nbsp;&nbsp;&nbsp;
+
+            <span id="msg" style="color: red;"></span>
+
+
+            <!--留言列表-->
+            <h2>留言列表</h2>
+            <div id="msgBoard" class="mes-board">
+                <li>
+                    <h4>admin</h4>
+                    <small>2021-04-22 15:34:45</small>
+                    <div>
+                        EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEOOOOOO
+                        PPPPPPPPPPPPPPPPPPPPPPPPPPPPPEEEEEEEEEEEEEEEEEEEEEEEEEEE
+                    </div>
+                </li>
+                <li>
+                    <h4>admin</h4>
+                    <small>2021-04-22 15:34:45</small>
+                    <div>
+                        EEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEOOOOOO
+                        PPPPPPPPPPPPPPPPPPPPPPPPPPPPPEEEEEEEEEEEEEEEEEEEEEEEEEEE
+                    </div>
+                </li>
+            </div>
+        </div>
+    </div>
+
+    <!--
+       留言板
+             实现思路：
+               1.获取用户姓名与留言内容
+               2.判断值是否为空，如果为空，则提示信息
+               3.绑定提交按钮的点击事件
+               4.获取姓名，留言内容以及当前系统时间，拼接成指定的html标签
+               5.将标签追加到留言表中
+-->
+    <script>
+        $(function () {
+            $("#sendBtn").click(function () {
+                //获取用户姓名
+                var userName = $("#userName").val();
+                //判断非空
+                if (userName == null || userName.trim() == "") {
+                    $("#msg").html("用户姓名不能为空！");
+                    return;
+                }
+                //获取留言内容
+                var content = $("#content").val();
+
+                //判断非空
+
+                if (content.trim() == "") {
+                    $("#msg").html("请输入留言内容！");
+                    return;
+                }
+
+                //留言数据
+
+                var msg = "<li><h4>" + userName + "</h4><small>" + formatDate() + "</small>";
+                msg += "<div>" + content + "</div></li>";
+
+                //将留言内容追加到留言板中
+
+                $("#msgBoard").prepend(msg);
+
+
+                //清空内容与提示信息
+
+                $("#userName").val("");
+                $("#content").val("");
+                $("msg").val("");
+
+            });
+
+            //格式化时间
+            function formatDate() {
+                //获取系统当前时间
+                var date = new Date();
+                //获取年月日时分秒
+                var str = date.getFullYear() + "-" + (parseInt(date.getMonth()) + 1) + "-" + date.getDate();
+                str + " " + date.getHours + ":" + date.getMinutes() + ":" + date.getSeconds();
+
+                return str;
+            }
+        })
+        // 发送留言
+
+    </script>
+
+</body>
+
+</html>

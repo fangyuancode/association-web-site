@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        .container {
+            width: 1200px;
+            margin: 0 auto;
+            position: relative;
+
+        }
+
+        .box {
+            width: 100px;
+            height: 40px;
+            line-height: 40px;
+            text-align: center;
+            background-color: pink;
+        }
+        /* 选择父容器作为下拉菜单的hover */
+        .container:hover .list {
+            display: block;
+        }
+
+        .list {
+            position: absolute;
+            display: none;
+        }
+
+        li {
+            list-style: none;
+            background-color: orange;
+            height: 30px;
+            line-height: 30px;
+            width: 120px;
+            border: 1px solid red;
+        }
+        li:hover{
+            background-color: #fff;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="container">
+        <div class="box">
+            下拉菜单
+        </div>
+        <ul class="list">
+            <li>菜单选项一</li>
+            <li>菜单选项一</li>
+            <li>菜单选项一</li>
+            <li>菜单选项一</li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

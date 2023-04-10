@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>留言板</title>
+
+    <style>
+        #box {
+            width: 800px;
+            margin: 50px auto;
+            /*border: 1px solid red;*/
+        }
+
+        #box textarea {
+            width: 100%;
+            height: 300px;
+            font-size: 30px;
+        }
+
+        li {
+            list-style: none;
+            height: 40px;
+            line-height: 40px;
+            /*加个下划线*/
+            border-bottom: 1px solid grey;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="box">
+        <textarea class="text" name="" id="" cols="30" rows="10"></textarea>
+        <button class="but">发布</button>
+        <ul class="list"></ul>
+    </div>
+
+    <script>
+        var oText = document.getElementsByClassName("text")[0];
+        oBut = document.getElementsByClassName("but")[0];
+        oList = document.getElementsByClassName("list")[0];
+
+        oBut.onclick = function () {
+            val = oText.value;
+            oText.value = "";
+            oList.innerHTML += "<li>" + val + "</li>"
+        }
+    </script>
+
+</body>
+
+</html>

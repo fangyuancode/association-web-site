@@ -1,0 +1,329 @@
+nav {
+  height: 55px;
+  width: 100%;
+  position: absolute;
+  color: white;
+  z-index: 999;
+}
+nav .nav1 {
+  width: 1180px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #293A90;
+}
+nav .nav1 .btil {
+  font-size: 16px;
+  line-height: 55px;
+  font-weight: 700;
+  text-align: center;
+  width: 108px;
+  height: 55px;
+}
+nav .nav1 .btil:hover {
+  background-color: #409EFF;
+}
+nav .nav1 .btil1 {
+  font-size: 16px;
+  line-height: 55px;
+  font-weight: 700;
+  text-align: center;
+  width: 108px;
+  height: 55px;
+}
+nav .nav1 .btil1 a {
+  color: #fff;
+}
+nav .nav1 .btil1 .droplist {
+  margin-left: -199px;
+  width: 1180px;
+  height: 80px;
+  background-color: #EBEDF1;
+  display: none;
+}
+nav .nav1 .btil1 .droplist .menu {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav .nav1 .btil1 .droplist .menu li a {
+  margin-top: 20px;
+  border: 1px solid #409EFF;
+  width: 120px;
+  height: 35px;
+  line-height: 35px;
+  font-weight: normal;
+  text-align: center;
+  color: black;
+  display: none;
+}
+nav .nav1 .btil1 .droplist .menu li a:hover {
+  background-color: #409EFF;
+  color: white;
+  transition: 0.2;
+}
+nav .nav1 .btil1:hover {
+  background-color: #409EFF;
+}
+nav .nav1 li:hover .droplist {
+  display: block;
+}
+nav .nav1 li:hover .droplist .menu a {
+  display: block;
+}
+nav .nav1 .btil2 {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  width: 108px;
+  height: 55px;
+  line-height: 55px;
+}
+nav .nav1 .btil2 a {
+  color: #fff;
+}
+nav .nav1 .btil2 .droplist2 {
+  margin-left: -368px;
+  width: 1180px;
+  height: 80px;
+  background-color: #EBEDF1;
+  display: none;
+}
+nav .nav1 .btil2 .droplist2 .menu2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav .nav1 .btil2 .droplist2 .menu2 li a {
+  margin-top: 20px;
+  border: 1px solid #409EFF;
+  width: 120px;
+  height: 35px;
+  line-height: 35px;
+  font-weight: normal;
+  text-align: center;
+  color: black;
+  display: none;
+}
+nav .nav1 .btil2 .droplist2 .menu2 li a:hover {
+  background-color: #409EFF;
+  color: white;
+  transition: 0.2;
+}
+nav .nav1 .btil2 .droplist2 .menu2 li .bitl2-a:hover {
+  background-color: #EBEDF1;
+}
+nav .nav1 .btil2:hover {
+  background-color: #409EFF;
+}
+nav .nav1 li:hover .droplist2 {
+  display: block;
+}
+nav .nav1 li:hover .droplist2 .menu2 a {
+  display: block;
+}
+nav .nav1 .btil3 {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  width: 108px;
+  height: 55px;
+  line-height: 55px;
+}
+nav .nav1 .btil3 a {
+  color: #fff;
+}
+nav .nav1 .btil3 .droplist3 {
+  margin-left: -536px;
+  width: 1180px;
+  height: 80px;
+  background-color: #EBEDF1;
+  display: none;
+}
+nav .nav1 .btil3 .droplist3 .menu3 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav .nav1 .btil3 .droplist3 .menu3 li a {
+  margin-top: 20px;
+  border: 1px solid #409EFF;
+  width: 120px;
+  height: 35px;
+  line-height: 35px;
+  font-weight: normal;
+  text-align: center;
+  color: black;
+  display: none;
+}
+nav .nav1 .btil3 .droplist3 .menu3 li a:hover {
+  background-color: #409EFF;
+  color: white;
+  transition: 0.2;
+}
+nav .nav1 .btil3 .droplist3 .menu3 li .bitl3-a:hover {
+  background-color: #EBEDF1;
+}
+nav .nav1 .btil3:hover {
+  background-color: #409EFF;
+}
+nav .nav1 li:hover .droplist3 {
+  display: block;
+}
+nav .nav1 li:hover .droplist3 .menu3 a {
+  display: block;
+}
+nav .nav1 .btil4 {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  width: 108px;
+  height: 55px;
+  line-height: 55px;
+}
+nav .nav1 .btil4 a {
+  color: #fff;
+}
+nav .nav1 .btil4 .droplist4 {
+  margin-left: -705px;
+  width: 1180px;
+  height: 80px;
+  background-color: #EBEDF1;
+  display: none;
+}
+nav .nav1 .btil4 .droplist4 .menu4 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav .nav1 .btil4 .droplist4 .menu4 li a {
+  margin-top: 20px;
+  border: 1px solid #409EFF;
+  width: 120px;
+  height: 35px;
+  line-height: 35px;
+  font-weight: normal;
+  text-align: center;
+  color: black;
+  display: none;
+}
+nav .nav1 .btil4 .droplist4 .menu4 li a:hover {
+  background-color: #409EFF;
+  color: white;
+  transition: 0.2;
+}
+nav .nav1 .btil4 .droplist4 .menu4 li .bitl4-a:hover {
+  background-color: #EBEDF1;
+}
+nav .nav1 .btil4:hover {
+  background-color: #409EFF;
+}
+nav .nav1 li:hover .droplist4 {
+  display: block;
+}
+nav .nav1 li:hover .droplist4 .menu4 a {
+  display: block;
+}
+nav .nav1 .btil5 {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  width: 108px;
+  height: 55px;
+  line-height: 55px;
+}
+nav .nav1 .btil5 a {
+  color: #fff;
+}
+nav .nav1 .btil5 .droplist5 {
+  margin-left: -873px;
+  width: 1180px;
+  height: 80px;
+  background-color: #EBEDF1;
+  display: none;
+}
+nav .nav1 .btil5 .droplist5 .menu5 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav .nav1 .btil5 .droplist5 .menu5 li a {
+  margin-top: 20px;
+  border: 1px solid #409EFF;
+  width: 120px;
+  height: 35px;
+  line-height: 35px;
+  font-weight: normal;
+  text-align: center;
+  color: black;
+  display: none;
+}
+nav .nav1 .btil5 .droplist5 .menu5 li a:hover {
+  background-color: #409EFF;
+  color: white;
+  transition: 0.2;
+}
+nav .nav1 .btil5 .droplist5 .menu5 li .bitl5-a:hover {
+  background-color: #EBEDF1;
+}
+nav .nav1 .btil5:hover {
+  background-color: #409EFF;
+}
+nav .nav1 li:hover .droplist5 {
+  display: block;
+}
+nav .nav1 li:hover .droplist5 .menu5 a {
+  display: block;
+}
+nav .nav1 .btil6 {
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+  width: 108px;
+  height: 55px;
+  line-height: 55px;
+}
+nav .nav1 .btil6 a {
+  color: #fff;
+}
+nav .nav1 .btil6 .droplist6 {
+  margin-left: -1042px;
+  width: 1180px;
+  height: 80px;
+  background-color: #EBEDF1;
+  display: none;
+}
+nav .nav1 .btil6 .droplist6 .menu6 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+nav .nav1 .btil6 .droplist6 .menu6 li a {
+  margin-top: 20px;
+  border: 1px solid #409EFF;
+  width: 120px;
+  height: 35px;
+  line-height: 35px;
+  font-weight: normal;
+  text-align: center;
+  color: black;
+  display: none;
+}
+nav .nav1 .btil6 .droplist6 .menu6 li a:hover {
+  background-color: #409EFF;
+  color: white;
+  transition: 0.2;
+}
+nav .nav1 .btil6 .droplist6 .menu6 li .bitl6-a:hover {
+  background-color: #EBEDF1;
+}
+nav .nav1 .btil6:hover {
+  background-color: #409EFF;
+}
+nav .nav1 li:hover .droplist6 {
+  display: block;
+}
+nav .nav1 li:hover .droplist6 .menu6 a {
+  display: block;
+}
